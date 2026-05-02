@@ -1,0 +1,1 @@
+const e={name:"Patient john",avatar:"https://randomuser.me/api/portraits/men/9.jpg",initials:"DT"},o=()=>{localStorage.removeItem("token"),localStorage.removeItem("role"),localStorage.removeItem("userId"),localStorage.removeItem("expireTime")};export{e as d,o as h};
