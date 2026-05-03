@@ -106,14 +106,8 @@ export const LoginForm = () => {
         </div>
 
         {/* LINKS */}
-        <div className="flex items-center justify-between text-xs mt-1">
-          <Link
-            to="/"
-            className="text-primary hover:text-primary transition"
-          >
-            Back to home
-          </Link>
-
+        <div className="flex items-center justify-end text-xs mt-1">
+        
           <Link
             to="/forgot-password"
             className="text-primary/80 hover:text-primary transition"

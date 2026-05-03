@@ -19,8 +19,8 @@ export const ProfileDropdown = ({ onSignOut }: ProfileDropdownProps) => {
       {/* Profile */}
       <Link to="/profile">
         <DropdownMenuItem className="flex items-center gap-3 font-medium p-3 cursor-pointer m-1 rounded-xl">
-          <User className="w-4 h-4" />
-          My Profile
+         
+         
         </DropdownMenuItem>
       </Link>
 

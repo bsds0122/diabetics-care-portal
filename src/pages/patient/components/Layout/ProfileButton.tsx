@@ -28,13 +28,6 @@ export const ProfileButton = React.forwardRef<HTMLButtonElement, ProfileButtonPr
             </AvatarFallback>
           </Avatar>
         </div>
-
-        <div className="flex flex-col items-start hidden sm:flex">
-          <span className="text-sm font-semibold text-foreground tracking-tight line-clamp-1">
-            {patientProfile?.name}
-          </span>
-        </div>
-
         <ChevronDown className="w-4 h-4 text-muted-foreground transition-transform group-data-[state=open]:rotate-180" />
       </Button>
     );

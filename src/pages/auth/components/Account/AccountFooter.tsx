@@ -8,7 +8,7 @@ export const AccountFooter = () => {
         to="/login"
         className="text-primary font-medium hover:text-primary/80 hover:underline underline-offset-4 transition"
       >
-        Log In
+        Sign In
       </Link>
     </p>
   );

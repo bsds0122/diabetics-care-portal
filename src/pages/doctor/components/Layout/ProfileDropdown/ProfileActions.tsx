@@ -23,14 +23,8 @@ export const ProfileActions = ({ onSignOut }: ProfileActionsProps) => {
       <DropdownMenuSeparator className="bg-border/60" />
 
       <DropdownMenuGroup>
-        {/* PROFILE */}
-        <DropdownMenuItem
-          onClick={() => navigate("/profile")}
-          className="cursor-pointer rounded-md hover:bg-accent focus:bg-accent transition-colors"
-        >
-          <User className="mr-2 h-4 w-4 text-muted-foreground" />
-          <span>Profile</span>
-        </DropdownMenuItem>
+       
+
       </DropdownMenuGroup>
 
       <DropdownMenuSeparator className="bg-border/60" />
