@@ -9,7 +9,7 @@ import { PrescriptionFooter } from "@/pages/doctor/components/Prescription/Treat
 
 export const PrescriptionCard = () => {
   return (
-    <Card className="rounded-2xl border border-border/60 bg-card/20 backdrop-blur-xl shadow-sm overflow-hidden">
+    <Card className="rounded-2xl bg-card/20  overflow-hidden">
 
      
      

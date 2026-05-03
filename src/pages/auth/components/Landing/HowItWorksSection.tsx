@@ -4,83 +4,74 @@ const steps = [
   {
     title: "Initial Hospital Visit",
     description:
-      "The patient visits the hospital and explains their symptoms and medical concerns to the doctor.",
+      "This is the first point of contact where the patient visits the hospital and explains their symptoms, medical history, and concerns. The doctor performs an initial assessment to determine possible risks of diabetes or cardiovascular disease and decides whether further screening is required.",
   },
   {
     title: "Patient Registration",
     description:
-      "The doctor registers the patient in the system if symptoms of diabetes or cardiovascular risk are identified.",
+      "If risk factors are identified, the patient is registered into the system. Personal and medical details are recorded to create a digital patient profile for tracking health status and future consultations.",
   },
   {
     title: "Diabetes Diagnosis",
     description:
-      "The doctor performs laboratory tests, including blood glucose measurement, to confirm whether the patient has diabetes.",
+      "Laboratory tests such as fasting blood glucose or random blood sugar tests are conducted. The results are analyzed to confirm whether the patient is diabetic, and the diagnosis is recorded in the system.",
   },
   {
     title: "Cardiovascular Assessment",
     description:
-      "After diabetes diagnosis, the patient undergoes cardiovascular evaluation due to the strong relationship between the two conditions.",
+      "Since diabetes increases heart-related risks, cardiovascular tests are performed including blood pressure and cholesterol checks to evaluate heart health status.",
   },
   {
     title: "Account Approval",
     description:
-      "The hospital administrator reviews and approves the patient account for system access and monitoring.",
+      "The hospital administrator reviews the patient’s data for completeness and accuracy. Once verified, the patient account is approved and activated for system access.",
   },
   {
     title: "Continuous Monitoring",
     description:
-      "The patient is continuously monitored both at the hospital and at home to detect complications early and improve long-term health outcomes.",
+      "The patient is continuously monitored both at the hospital and remotely. Doctors track health indicators to detect complications early and ensure timely intervention.",
   },
 ];
 
 export const HowItWorksSection = () => {
   return (
-    <section className="bg-card border border-black/10 rounded-lg p-4 md:p-6 mb-8">
+    <section className="bg-card border border-border rounded-xl p-7">
 
       {/* Header */}
-      <div className="text-center mb-5 space-y-2">
-
-        <h2 className="text-xl md:text-2xl font-semibold text-foreground">
+      <div className="mb-7 text-center">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           How It Works
         </h2>
 
-        <p className="text-xs md:text-sm text-muted-foreground max-w-lg mx-auto">
-          A structured clinical workflow for diabetes and cardiovascular disease management.
-        </p>
+        <div className="w-12 h-[2px] mt-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto" />
 
-        <div className="w-12 h-[2px] bg-gradient-to-r from-blue-500 to-black mx-auto rounded-full" />
+        <p className="text-base md:text-lg text-muted-foreground mt-3 max-w-md mx-auto">
+          Detailed clinical workflow for diabetes and cardiovascular disease management system
+        </p>
       </div>
 
       {/* Steps */}
-      <div className="grid gap-3 md:grid-cols-2">
-
+      <div className="space-y-7">
         {steps.map((step, index) => (
-          <div
-            key={index}
-            className="flex gap-3 p-3 rounded-md border border-border/20 hover:bg-blue-500/5 transition"
-          >
+          <div key={index} className="flex gap-5">
 
-            {/* Step Number */}
-            <div className="flex items-center justify-center min-w-[26px] h-6 rounded-full bg-blue-500/10 text-blue-600 text-[10px] font-medium">
-              {index + 1}
+            {/* Dot */}
+            <div className="mt-2">
+              <span className="w-3 h-3 rounded-full bg-blue-500 block" />
             </div>
 
             {/* Content */}
-            <div className="space-y-0.5">
-
-              <h3 className="text-sm font-medium text-black dark:text-foreground">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground">
                 {step.title}
               </h3>
-
-              <p className="text-[11px] md:text-xs text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed mt-1">
                 {step.description}
               </p>
-
             </div>
 
           </div>
         ))}
-
       </div>
 
     </section>

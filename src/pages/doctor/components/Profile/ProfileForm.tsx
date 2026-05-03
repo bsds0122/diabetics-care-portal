@@ -17,8 +17,8 @@ export const ProfileForm = ({
   return (
     <Card className="relative overflow-hidden rounded-2xl border border-border/60 bg-card/20 backdrop-blur-xl">
 
-      {/* top accent line */}
-      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+     
+     
 
       <CardContent className="p-6 space-y-8">
 

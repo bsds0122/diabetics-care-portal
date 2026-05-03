@@ -32,7 +32,7 @@ const educationCards = [
       "Whole grains",
       "Fruits in moderate portions",
       "Lean proteins",
-      "Healthy fats (e.g., nuts, avocado)",
+      "Healthy fats (nuts, avocado)",
     ],
   },
   {
@@ -53,48 +53,48 @@ export const EducationSection = () => {
     <section className="mb-10">
 
       {/* Header */}
-      <div className="text-center mb-6 space-y-3">
+      <div className="text-center mb-8 space-y-3">
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
           Patient Education
         </h2>
 
-        <p className="text-sm md:text-base text-muted-foreground max-w-lg mx-auto">
+        <p className="text-lg text-muted-foreground max-w-xl mx-auto">
           Educational guidelines to support diabetes management and promote healthier lifestyle choices.
         </p>
 
-        <div className="w-14 h-[2px] bg-gradient-to-r from-blue-500 to-black mx-auto rounded-full" />
+        <div className="w-14 h-[2px] bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full" />
       </div>
 
       {/* Grid */}
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2">
 
         {educationCards.map((card, idx) => (
           <div
             key={idx}
-            className="bg-card border border-border/20 rounded-lg p-5 hover:bg-blue-500/5 transition"
+            className="bg-card border border-border rounded-xl p-6 hover:bg-blue-500/5 transition"
           >
 
             {/* Header */}
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-5">
 
-              <div className="flex items-center justify-center w-8 h-8 rounded-md bg-blue-500/10 text-blue-600">
-                <card.icon className="w-4 h-4" />
+              <div className="flex items-center justify-center w-10 h-10 rounded-md bg-blue-500/10 text-blue-600">
+                <card.icon className="w-5 h-5" />
               </div>
 
-              <h3 className="text-base font-semibold text-foreground">
+              <h3 className="text-xl font-semibold text-foreground">
                 {card.title}
               </h3>
 
             </div>
 
             {/* List */}
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-3 text-base md:text-lg text-muted-foreground leading-relaxed">
 
               {card.items.map((item, i) => (
-                <li key={i} className="flex items-start gap-2">
+                <li key={i} className="flex gap-3">
 
-                  <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-blue-500/60" />
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-500/70 flex-shrink-0" />
 
                   <span>{item}</span>
 

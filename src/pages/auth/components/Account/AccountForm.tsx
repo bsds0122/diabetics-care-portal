@@ -97,7 +97,7 @@ export const AccountForm = () => {
             id="newPassword"
             type={showNewPassword ? "text" : "password"}
             name="newPassword"
-            placeholder="Create new password"
+            placeholder=" new password"
             value={form.newPassword}
             onChange={handleChange}
             className="h-9 pr-14 text-sm"
@@ -126,7 +126,7 @@ export const AccountForm = () => {
           "Creating account..."
         ) : (
           <>
-            <span>Create Account</span>
+            <span>sign up</span>
            
           </>
         )}

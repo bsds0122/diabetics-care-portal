@@ -20,7 +20,7 @@ const Patients = () => {
   return (
     <div className="flex flex-col space-y-6 h-[calc(100vh-10rem)]">
 
-      <div className="flex-1 flex gap-6 overflow-hidden rounded-2xl border border-border/60 bg-card/20 backdrop-blur-xlp-4 min-h-0">
+      <div className="flex-1 flex gap-6 overflow-hidden rounded-2xl  min-h-0">
 
         {/* LEFT SIDEBAR */}
         <PatientSidebar

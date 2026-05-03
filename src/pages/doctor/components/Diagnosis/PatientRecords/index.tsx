@@ -10,7 +10,7 @@ export const PatientRecords = ({
   onRowClick,
 }) => {
   return (
-    <Card className="rounded-2xl border border-border/40 bg-card/20 backdrop-blur-xl shadow-xl overflow-hidden transition-all duration-300">
+    <Card className="rounded-2xl  bg-card/20 overflow-hidden ">
 
       {/* Header */}
       <PatientRecordsHeader

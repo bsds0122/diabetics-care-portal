@@ -8,7 +8,7 @@ export const PatientHeader = ({ selected }) => {
     (selected?.lastName?.[0] || "");
 
   return (
-    <div className="h-32 bg-gradient-to-r from-blue-900/30 via-blue-700/15 to-transparent relative">
+    <div className="h-32 bg-gradient-to-r from-blue-900/40 via-blue-700/20 to-transparent relative">
 
       {/* avatar + info */}
       <div className="absolute -bottom-12 left-6 flex gap-4 items-end">

@@ -1,7 +1,6 @@
 import React from "react";
 
 export const DoctorCardSection = () => {
-
   const points = [
     "The system enables structured, efficient, and patient-centered clinical workflows.",
     "It helps doctors identify patients with diabetes and reduces cardiovascular risk over time.",
@@ -19,8 +18,7 @@ export const DoctorCardSection = () => {
         <div className="grid md:grid-cols-2">
 
           {/* IMAGE */}
-          <div className="relative h-52 md:h-full overflow-hidden">
-
+          <div className="relative h-56 md:h-full overflow-hidden">
             <img
               src="https://i.ibb.co/WNPncYv8/Screenshot-2026-04-09-063734.png"
               alt="Doctor treating patient"
@@ -31,25 +29,25 @@ export const DoctorCardSection = () => {
           </div>
 
           {/* CONTENT */}
-          <div className="p-4 md:p-6 space-y-3">
+          <div className="p-6 md:p-8 space-y-4">
 
-            <h2 className="text-lg md:text-2xl font-semibold leading-snug">
+            <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
               <span className="text-blue-600">Compassionate Care,</span>{" "}
               <span className="text-black dark:text-foreground">
                 Powered by Technology
               </span>
             </h2>
 
-            <ul className="space-y-2 text-xs md:text-sm text-muted-foreground leading-relaxed">
+            <ul className="space-y-3 text-sm md:text-base text-muted-foreground leading-relaxed">
               {points.map((item, i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-[6px] w-1 h-1 rounded-full bg-blue-500/60" />
-                  {item}
+                <li key={i} className="flex gap-3">
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-500/70 flex-shrink-0" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="pt-2 border-t border-blue-500/20" />
+            <div className="pt-3 border-t border-blue-500/20" />
 
           </div>
 

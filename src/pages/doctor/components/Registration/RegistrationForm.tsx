@@ -22,14 +22,8 @@ export const RegistrationForm: React.FC<RegistrationFormProps> = ({
   handleSubmit,
 }) => {
   return (
-    <Card className="relative rounded-2xl border border-border/60 bg-card/20 backdrop-blur-xl shadow-xl lg:col-span-2 overflow-hidden">
+    <Card className="relative rounded-2xl bg-card/20  lg:col-span-2 overflow-hidden">
       
-      {/* Top accent line */}
-      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
-
-    
-    
-
       <CardContent className="relative pt-7">
         <form onSubmit={handleSubmit} className="space-y-7">
 

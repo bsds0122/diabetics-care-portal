@@ -9,10 +9,8 @@ import { FormActions } from "@/pages/doctor/components/Assessment/FormComponents
 
 export const AssessmentForm = ({ form, setForm, handleAssess }) => {
   return (
-    <Card className="relative w-full  rounded-2xl border border-border/40 bg-card/20 backdrop-blur-xl shadow-sm overflow-hidden">
+    <Card className="relative w-full  rounded-2xl  bg-card/20  overflow-hidden">
 
-     
-     
 
       <CardContent className="relative px-6 py-8">
         <form onSubmit={handleAssess} className="space-y-10">

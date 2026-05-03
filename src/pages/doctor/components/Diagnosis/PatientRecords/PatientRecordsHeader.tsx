@@ -5,8 +5,8 @@ import { Search, Database } from "lucide-react";
 export const PatientRecordsHeader = ({ search, onSearchChange }) => {
   return (
     <CardHeader className="relative px-6 md:px-8 py-5 border-b border-border/40 bg-card/20 backdrop-blur-xl">
-      {/* top glow line */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+     
+     
 
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         {/* Left Side */}

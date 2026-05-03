@@ -5,8 +5,8 @@ export const ProfileHeader = ({ profileImage }) => {
   return (
     <div className="relative h-36 bg-gradient-to-r from-primary/25 via-primary/10 to-transparent rounded-t-2xl overflow-hidden">
 
-      {/* subtle background glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/20" />
+     
+     
 
       {/* Avatar */}
       <div className="absolute -bottom-16 left-6">

@@ -5,7 +5,7 @@ import { ModelExplainability } from "@/pages/doctor/components/Assessment/Result
 
 export const AssessmentResult = ({ assessmentResult }) => {
   return (
-    <Card className="relative w-full  rounded-2xl border border-border/40 bg-card/20 backdrop-blur-xl overflow-hidden">
+    <Card className="relative w-full  rounded-2xl bg-card/20  overflow-hidden">
 
       {/* CONTENT */}
       <CardContent className="relative px-6 py-6 space-y-6">

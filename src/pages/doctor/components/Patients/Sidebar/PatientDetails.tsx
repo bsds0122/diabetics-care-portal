@@ -12,14 +12,7 @@ export const PatientDetails = ({
   trends,
 }) => {
   return (
-    <Card className="relative flex-1 flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-card/20 backdrop-blur-xl shadow-sm">
-
-      {/* top accent line */}
-      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/40 to-transparent pointer-events-none" />
-
-      {/* subtle glow overlay */}
-      <div className="absolute inset-0 opacity-0 bg-gradient-to-r from-primary/5 via-transparent to-transparent pointer-events-none" />
-
+    <Card className="relative flex-1 flex flex-col overflow-hidden rounded-2xl ">
       <PatientHeader selected={selected} />
 
       <PatientTabs

@@ -8,7 +8,7 @@ export const LoginFooter = () => {
         to="/account"
         className="font-medium text-blue-600 hover:text-blue-700 hover:underline transition"
       >
-        Create account
+        sign up
       </Link>
     </p>
   );

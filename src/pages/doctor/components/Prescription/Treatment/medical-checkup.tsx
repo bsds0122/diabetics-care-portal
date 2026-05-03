@@ -6,12 +6,7 @@ import { MedicalCheckupFooter } from "@/pages/doctor/components/Prescription/Tre
 
 export const MedicalCheckupCard = () => {
   return (
-    <Card className="relative rounded-2xl border border-border/60 bg-card/20 backdrop-blur-xl shadow-sm overflow-hidden">
-
-      {/* Accent line */}
-      <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
-
-     
+    <Card className="relative rounded-2xl  bg-card/20  overflow-hidden">
       <MedicalCheckupBody />
       <MedicalCheckupFooter />
 
