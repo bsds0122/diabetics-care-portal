@@ -1,0 +1,1 @@
+export const BASE_URL ="https://cadiovascular-risk-assessment-9.onrender.com";
